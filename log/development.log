@@ -1,0 +1,62 @@
+Started GET "/" for 127.0.0.1 at 2017-12-03 23:28:53 +0800
+Processing by Rails::WelcomeController#index as HTML
+Completed 500 Internal Server Error in 140ms
+
+
+  
+KeyError (Cannot load `Rails.application.database_configuration`:
+key not found: "POSTGRESQL_DATABASE_HOST"):
+  
+(erb):29:in `fetch'
+(erb):29:in `<main>'
+Started GET "/" for 127.0.0.1 at 2017-12-03 23:30:35 +0800
+Processing by Rails::WelcomeController#index as HTML
+Completed 500 Internal Server Error in 143ms
+
+
+  
+KeyError (Cannot load `Rails.application.database_configuration`:
+key not found: "POSTGRESQL_DATABASE_HOST"):
+  
+(erb):29:in `fetch'
+(erb):29:in `<main>'
+Started GET "/" for 127.0.0.1 at 2017-12-03 23:31:53 +0800
+Processing by Rails::WelcomeController#index as HTML
+Completed 500 Internal Server Error in 139ms
+
+
+  
+KeyError (Cannot load `Rails.application.database_configuration`:
+key not found: "POSTGRESQL_DATABASE_HOST"):
+  
+(erb):29:in `fetch'
+(erb):29:in `<main>'
+Started GET "/" for 127.0.0.1 at 2017-12-03 23:32:22 +0800
+Processing by Rails::WelcomeController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+KeyError (Cannot load `Rails.application.database_configuration`:
+key not found: "POSTGRESQL_DATABASE_HOST"):
+  
+(erb):29:in `fetch'
+(erb):29:in `<main>'
+Started GET "/" for 127.0.0.1 at 2017-12-03 23:32:25 +0800
+Processing by Rails::WelcomeController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+KeyError (Cannot load `Rails.application.database_configuration`:
+key not found: "POSTGRESQL_DATABASE_HOST"):
+  
+(erb):29:in `fetch'
+(erb):29:in `<main>'
+Started GET "/" for 127.0.0.1 at 2017-12-03 23:34:17 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mac/wen/.rvm/gems/ruby-2.3.3/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mac/wen/.rvm/gems/ruby-2.3.3/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 191ms (Views: 11.6ms)
+
+
