@@ -1,4 +1,6 @@
 log/*.log
 tmp/*
-*/.DS_Store
+.DS_Store
+config/settings.yml
 db/schema.rb
+/config/application.yml
