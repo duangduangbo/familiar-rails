@@ -6085,3 +6085,4 @@ Did you mean?  new_user_path
                new_user_url):
   
 app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
