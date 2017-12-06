@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
   # POST /articles.json
   def create
     @article = Article.new(article_params)
-
+    @article.user_id = current_user.id
     respond_to do |format|
       if @article.save
         format.html { redirect_to @article, notice: 'Article was successfully created.' }
@@ -61,6 +61,19 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def creat_comment
+    if params[:comment][:content].presence
+      @comment = Comment.new
+      @comment.user_id = current_user.id
+      @comment.source_id = params[:comment][:source_id]
+      @comment.content = params[:comment][:content]
+      @comment.save
+      redirect_back fallback_location: root_path, :notice=> 'Comment was successfully created.'
+    else
+      redirect_back fallback_location: root_path, :notice=> 'Comment was successfully faild.'
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_article
@@ -70,5 +83,6 @@ class ArticlesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
       params.fetch(:article, {})
+      params.require(:article).permit(:title, :content)
     end
 end
