@@ -7,7 +7,7 @@ end
 
 gem 'jquery-rails'
 gem 'simple_form'
-
+gem 'rails-i18n', '~> 5.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
