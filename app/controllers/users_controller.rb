@@ -6,13 +6,10 @@ class UsersController < ApplicationController
 
   def create
     user = User.new(user_params)
-    cookies[:auth_token] = user.auth_token
+    binding.pry
     user.save
+    cookies[:auth_token] = user.auth_token
     redirect_to :root
-  end
-
-  def login
-    
   end
 
   def sign_in

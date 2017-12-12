@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+记录，学习rails
 
-Things you may want to cover:
+时间线：
 
-* Ruby version
+* 用户名，手机号，邮箱登录
 
-* System dependencies
+* 用户创建文章
 
-* Configuration
+* 评论文章
 
-* Database creation
+* 文章收藏
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 文章点赞
