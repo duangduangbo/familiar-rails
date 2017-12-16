@@ -1,5 +1,17 @@
 <div class="container">
   <div class="row">
-    <h1>验证用户权限，默认进来只能看到首页，不能看到其他页面</h1>
+    <h1>验证用户权限，请登录</h1>
   </div>
+</div>
+
+<div class="container">
+  <% @articles.each do |article| %>
+  <div class="row">
+    <div class="col-md-12">
+      <p>用户：<%= article.user_id %></p>
+      <p>标题：<%= article.title %></p>
+      <p><%= article.content %></p>
+    </div>
+  </div>
+  <% end %>
 </div>
